@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.home {
+  padding: 20px;
+}
+
+.carousel-container {
+  margin-bottom: 40px;
+}
+
+.carousel-container h2 {
+  margin-bottom: 20px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie-card img {
+  width: 100%;
+}
+
+.movie-details {
+  padding: 20px;
+}
+
+.trailer {
+  margin-top: 20px;
+}
+
+.trailer iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+}

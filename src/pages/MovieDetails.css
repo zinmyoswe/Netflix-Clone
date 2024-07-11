@@ -1,0 +1,264 @@
+/* General Styles */
+.movie-details {
+  padding: 20px;
+  background-color: #141414; /* Dark background color */
+  color: #e5e5e5; /* Light text color */
+  min-height: 100vh;
+}
+
+/* Category Links */
+.movie-details-info .category-link {
+  color: white; /* Netflix red */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.movie-details-info .category-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.movie-details-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.movie-details-poster {
+  margin-bottom: 20px;
+}
+
+.movie-details-poster img {
+  width: 100%;
+  max-width: 300px; /* Adjusted to resemble Netflix's poster size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Dark shadow for depth */
+}
+
+.movie-details-info {
+  max-width: 900px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8); /* Darker background for readability */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Dark shadow for depth */
+  text-align: center;
+}
+
+.movie-details-info h1 {
+  font-size: 2.5rem; /* Larger font for movie title */
+  margin-bottom: 10px;
+}
+
+.movie-details-info .movie-details-tagline {
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #b3b3b3; /* Slightly lighter color for tagline */
+}
+
+.movie-details-info .movie-details-overview {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.movie-details-info .movie-details-release-date,
+.movie-details-info .movie-details-rating,
+.movie-details-info .movie-details-duration,
+.movie-details-info .movie-details-director,
+.movie-details-info .movie-details-writers,
+.movie-details-info .movie-details-categories {
+  margin-bottom: 10px;
+}
+
+.movie-details-info .movie-details-categories,
+.movie-details-info .movie-details-writers {
+  font-weight: bold;
+}
+
+.movie-details-info .movie-details-categories {
+  color: #b3b3b3; /* Lighter color for categories */
+}
+
+.movie-details-info .movie-details-director,
+.movie-details-info .movie-details-writers {
+  color: #737373; /* Slightly lighter color for director and writers */
+}
+
+.movie-details-info .movie-details-duration {
+  font-weight: bold;
+}
+
+/* Teaser and Trailer */
+.movie-details-teaser,
+.movie-details-trailer {
+  margin-top: 20px;
+}
+
+.movie-details-teaser iframe,
+.movie-details-trailer iframe {
+  width: 100%;
+  max-width: 1000px; /* Wider video player */
+  height: 560px; /* Larger height for video */
+  border-radius: 10px;
+  border: none;
+}
+
+/* Actors */
+.movie-details-actors {
+  margin-top: 30px;
+}
+
+.movie-details-actors h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.movie-details-actors ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.movie-details-actors li {
+  text-align: center;
+  max-width: 100px;
+}
+
+.movie-details-actors img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Light shadow for actor images */
+}
+
+/* Recommendations */
+.movie-details-recommendations {
+  margin-top: 30px;
+}
+
+.movie-details-recommendations h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.movie-details-recommendations ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.movie-details-recommendations li {
+  text-align: center;
+  max-width: 150px;
+}
+
+.movie-details-recommendations img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Light shadow for recommendation images */
+}
+
+.movie-details-recommendations p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .movie-details-info {
+    padding: 10px;
+  }
+
+  .movie-details-info h1 {
+    font-size: 2rem;
+  }
+
+  .movie-details-info .movie-details-tagline,
+  .movie-details-info .movie-details-overview,
+  .movie-details-info .movie-details-release-date,
+  .movie-details-info .movie-details-rating,
+  .movie-details-info .movie-details-duration,
+  .movie-details-info .movie-details-director,
+  .movie-details-info .movie-details-writers,
+  .movie-details-info .movie-details-categories {
+    font-size: 0.9rem;
+  }
+
+  .movie-details-teaser iframe,
+  .movie-details-trailer iframe {
+    height: 400px;
+  }
+
+  .movie-details-actors ul,
+  .movie-details-recommendations ul {
+    gap: 5px;
+  }
+
+  .movie-details-actors li,
+  .movie-details-recommendations li {
+    max-width: 80px;
+  }
+
+  .movie-details-actors img,
+  .movie-details-recommendations img {
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-details-content {
+    padding: 10px;
+  }
+
+  .movie-details-info {
+    padding: 10px;
+  }
+
+  .movie-details-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .movie-details-info .movie-details-tagline,
+  .movie-details-info .movie-details-overview,
+  .movie-details-info .movie-details-release-date,
+  .movie-details-info .movie-details-rating,
+  .movie-details-info .movie-details-duration,
+  .movie-details-info .movie-details-director,
+  .movie-details-info .movie-details-writers,
+  .movie-details-info .movie-details-categories {
+    font-size: 0.8rem;
+  }
+
+  .movie-details-teaser iframe,
+  .movie-details-trailer iframe {
+    height: 300px;
+  }
+
+  .movie-details-actors ul,
+  .movie-details-recommendations ul {
+    gap: 2px;
+  }
+
+  .movie-details-actors li,
+  .movie-details-recommendations li {
+    max-width: 60px;
+  }
+
+  .movie-details-actors img,
+  .movie-details-recommendations img {
+    max-width: 60px;
+  }
+}

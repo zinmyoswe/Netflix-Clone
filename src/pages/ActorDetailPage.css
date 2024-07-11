@@ -1,0 +1,193 @@
+.actor-detail {
+    background-color: #141414; /* Dark background similar to Netflix */
+    color: #fff; /* White text for better contrast */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .actor-detail-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .actor-detail-photo img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 200px; /* Set a fixed width for the actor photo */
+    height: 300px; /* Set a fixed height for the actor photo */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    margin-bottom: 20px;
+  }
+  
+  .actor-detail-info {
+    text-align: center;
+  }
+  
+  .actor-detail-info h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .actor-detail-info p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .actor-detail-social-media {
+    margin-top: 20px;
+  }
+  
+  .actor-detail-social-media a {
+    display: inline-block;
+    margin: 5px;
+    color: #e50914; /* Netflix red color for links */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .actor-detail-social-media a:hover {
+    text-decoration: underline;
+  }
+  
+  .actor-detail-movies,
+  .actor-detail-tv {
+    margin-top: 30px;
+  }
+  
+  .actor-detail-movies h2,
+  .actor-detail-tv h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .actor-detail-movies ul,
+  .actor-detail-tv ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between items */
+    justify-content: center; /* Center items */
+  }
+  
+  .actor-detail-movies li,
+  .actor-detail-tv li {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 150px;
+    height: 225px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .actor-detail-movies li:hover,
+  .actor-detail-tv li:hover {
+    transform: scale(1.05);
+  }
+  
+  .actor-detail-movies img,
+  .actor-detail-tv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .actor-detail-movies p,
+  .actor-detail-tv p {
+    margin: 5px;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  
+  .actor-detail-tv {
+    margin-top: 30px;
+  }
+  
+  .actor-detail-tv ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .actor-detail-tv li {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 150px;
+    height: 225px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .actor-detail-tv li:hover {
+    transform: scale(1.05);
+  }
+  
+  .actor-detail-tv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .actor-detail-tv p {
+    margin: 5px;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  
+  /* For tablets and small screens */
+  @media (max-width: 768px) {
+    .actor-detail-photo img {
+      width: 150px;
+      height: 225px;
+    }
+  
+    .actor-detail-info h1 {
+      font-size: 1.5em;
+    }
+  
+    .actor-detail-info p {
+      font-size: 0.9em;
+    }
+  
+    .actor-detail-movies ul,
+    .actor-detail-tv ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .actor-detail-movies li,
+    .actor-detail-tv li {
+      width: 120px;
+      height: 180px;
+    }
+  }
+  
+  /* For mobile screens */
+  @media (max-width: 480px) {
+    .actor-detail-photo img {
+      width: 120px;
+      height: 180px;
+    }
+  
+    .actor-detail-info h1 {
+      font-size: 1.2em;
+    }
+  
+    .actor-detail-info p {
+      font-size: 0.8em;
+    }
+  
+    .actor-detail-movies li,
+    .actor-detail-tv li {
+      width: 100px;
+      height: 150px;
+    }
+  }
+  

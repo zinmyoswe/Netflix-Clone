@@ -1,0 +1,122 @@
+.category-detail-page {
+    padding: 20px;
+    background-color: #f0f0f0; /* Light background color for better contrast */
+  }
+  
+  .category-detail-page h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .category-detail-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Section styles */
+  .movies-section, .tvshows-section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  /* Flex container for movie and TV show lists */
+  .movie-list, .tvshow-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Center content on larger screens */
+  }
+  
+  .movie-item, .tvshow-item {
+    flex: 1 1 200px;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Responsive image styles */
+  .movie-item img, .tvshow-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .movie-item p, .tvshow-item p {
+    margin: 10px 0;
+    font-size: 0.9em;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .movie-item, .tvshow-item {
+      flex: 1 1 220px; /* Adjust item size for medium screens */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .movie-item, .tvshow-item {
+      flex: 1 1 250px; /* Adjust item size for smaller screens */
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    h2 {
+      font-size: 1.4em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .category-detail-page {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.6em;
+    }
+  
+    h2 {
+      font-size: 1.2em;
+    }
+  
+    .movie-list, .tvshow-list {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center;
+    }
+  
+    .movie-item, .tvshow-item {
+      flex: 1 1 100%;
+    }
+  
+    .movie-item img, .tvshow-item img {
+      height: 150px; /* Fixed height for images on small screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 1.4em;
+    }
+  
+    h2 {
+      font-size: 1em;
+    }
+  
+    .movie-item img, .tvshow-item img {
+      height: 120px; /* Smaller image height on very small screens */
+    }
+  
+    .movie-item p, .tvshow-item p {
+      font-size: 0.8em;
+    }
+  }
+  
